@@ -439,7 +439,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_abstract">Abstract</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Here, I will show how a script can be tested in regard to its collaborations with other executables.</p>
+<p>Here, I will show how a script can be tested in regard to its collaborations
+with other executables.</p>
 </div>
 </div>
 </div>
@@ -476,7 +477,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_overview">Overview</h3>
 <div class="paragraph">
-<p>Replace calls to <code>legs.sh</code> with calls to another script which logs its parameters. Then, assert that the calls are the expected ones.</p>
+<p>Replace calls to <code>legs.sh</code> with calls to another script which logs its
+parameters. Then, assert that the calls are the expected ones.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -489,10 +491,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_detailed">Detailed</h3>
 <div class="paragraph">
-<p><code>bats</code> = <em>Bash Automated Testing System</em> is a convenient test framework for shell scripts and other executables.</p>
+<p><code>bats</code> = <em>Bash Automated Testing System</em> is a convenient test framework for
+shell scripts and other executables.</p>
 </div>
 <div class="paragraph">
-<p>The <a href="https://github.com/sstephenson/bats">original <code>bats</code></a> is abandoned in 2016, but its development was continued as <a href="https://github.com/bats-core/bats-core"><code>bats-core</code></a> by a new team.</p>
+<p>The <a href="https://github.com/sstephenson/bats">original <code>bats</code></a> was abandoned in 2016,
+but its development continued as
+<a href="https://github.com/bats-core/bats-core"><code>bats-core</code></a> by a new team.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -510,13 +515,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>There can be multiple tests in a <code>*.bats</code> file and running these in parallel requires careful coding.</p>
+<p>There can be multiple tests in a <code>*.bats</code> file and running these in parallel
+requires careful coding.</p>
 </li>
 <li>
-<p>In Debian 9 and 10, only the <em>old</em> (0.4) version of <code>bats</code> is available out of the box, and supporting both current (1.*) and legacy <code>bats</code> is additional effort. Thus, a decision to only use the current <code>bats</code> (also known as <code>bats-core</code>) can save future developer effort at the expense of additional initial effort.</p>
+<p>In Debian 9 and 10, only the <em>old</em> (0.4) version of <code>bats</code> is available out
+of the box, and supporting both current (1.*) and legacy <code>bats</code> is additional
+effort. Thus, a decision to only use the current <code>bats</code> (also known as
+<code>bats-core</code>) can save future developer effort at the expense of additional
+initial effort.</p>
 </li>
 <li>
-<p>Boilerplate code is plenty, but could be simplified when using one of the two <code>bats-mock</code> libraries.</p>
+<p>Boilerplate code is plenty, but could be simplified when using one of the two
+<code>bats-mock</code> libraries.</p>
 </li>
 </ul>
 </div>
